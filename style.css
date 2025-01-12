@@ -1,0 +1,1020 @@
+* { /*reset browser margin and padding*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav { /*style for navigation bar*/
+  font-family: "futura-pt", sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 5px 40px; 
+  margin: 0; 
+  list-style: none; 
+  background-color: #f9f9f9;
+}
+
+#IGNEZ { /*styling of ignez logo*/ 
+  padding: 45px 50px;
+  text-align: center;
+  color: #e85102;
+  font-family: "ethnocentric", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+
+#nav ul { /*alignment for nav bar*/
+  display: flex;
+  gap: 170px; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+}
+
+#nav li { /*to ensure no bullet points are shown*/
+  list-style: none;
+}
+
+#nav a { 
+  text-decoration: none;
+}
+
+#nav a:hover { /*hover state for navigation links*/
+  color: #e85102;
+  text-decoration: underline;
+}
+
+#nav li a{ /*styling of navigation links*/
+  color: #000000;
+}
+
+#nav a:visited { /*color of links when visited*/
+  color: #e85102; 
+}
+
+#navbarbutton { /*styling of PRE-ORDER cta button in the nva bar*/
+  background-color: #f9f9f9;
+  border: solid #E85102;
+  border-radius: 50px;
+  padding: 14px 28px;
+  cursor: pointer; /*sets the cursor to a pointer, indicating the element is clickable*/
+  color: #E85102;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#navbarbutton:hover { /*hover state of PRE-ORDER cta button*/
+  background-color:#E85102;
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+body {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  background-color: #000000;
+}
+
+/* start of pre-order page*/
+#preorder { /*margin for pre-order section*/
+  margin: 80px auto;
+}
+
+.bold { /*styling of 'PRE - ORDER' text on pre-order page*/
+  font-family: "futura-pt", sans-serif;
+  font-size: 20px;
+  padding: 0px 20px; 
+  font-weight: 600;
+  color: #f9f9f9;
+  margin: 0px 0px 0px 732px;
+  text-align: left;
+}
+
+.h5 { /*styling for 'IGNEZ FIREVALE V5.0' text on pre-order page*/
+    display: flex;
+    justify-content: right;
+    font-family: "ethnocentric", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #e85102;
+    margin: 12px 351px 0px 0px;
+    text-align: left;
+}
+
+.instructions { /*styling of instructions for user to follow on pre-order page*/
+  font-family: "futura-pt", sans-serif;
+  font-size: 20px;
+  padding: 0px 20px; 
+  font-weight: 400;
+  color: #f9f9f9;
+  margin: 60px 0px 0px 732px;
+  text-align: left;
+}
+
+/* Styling of the form fields and its position on the pre-order page */
+.form {
+  max-width: 550px; /* Use max-width not width so it remains responsive */
+  padding: 10px 60px;
+  margin: 0px 50px 0px 684px; 
+}
+
+/* Styling of the input field's border radius once clicked (active) */
+input {
+  border-radius: 4px;
+}
+
+/* Styling of the form input fields */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* Styling of the placeholder text color */
+::placeholder {
+  color: #000000;
+}
+
+/* Making use of flex to place multiple input fields side by side */
+.form-row {
+  display: flex;
+  margin: 0 -15px;
+}
+
+.form-row > div {
+  width: 100%;
+  padding: 0 15px;
+}
+
+select { /*styling of selected options for sizes in the pre-order page*/
+  width: 10rem;
+  background-color: #f9f9f9;
+}
+
+select>option {
+  background-color: #f9f9f9;
+}
+
+/* Styling of the submit button at the end of the form */
+input[type=submit] {
+  width: 70%;
+  background-color: #E85102;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0px 0px 80px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  float: right;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* Styling the submit button when a mouse hovers over */
+input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #E85102;
+}
+
+/* Positioning of the shoe model images */
+.shoe-model-1 {
+  width: 431px;
+  height: 307px;
+  margin: -595px 0px 0px 150px;
+  position: absolute;
+  object-fit: cover;
+}
+
+/*positioning of shoe model images for user viewing*/
+.shoe-model-2 {
+  width: 112px;
+  height: 81px;
+  margin: -258px 0px 0px 102px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.shoe-model-3 {
+  width: 108px;
+  height: 77px;
+  margin: -258px 0px 0px 288px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.shoe-model-4 {
+  width: 108px;
+  height: 77px;
+  margin: -258px 0px 0px 472px;
+  position: absolute;
+  object-fit: cover;
+}
+
+/*black background under nav bar (for FAQ section)*/
+.FAQ {
+  /*styling the placement of the black background*/
+    background-color: #000000;
+    display: flex; /*defines the container as a flex container, enabling flexbox layout*/
+    flex-direction: row; /*sets the main axis of the flex container to run horizontally*/
+    justify-content: center; /*aligns the flex items along the main axis (horizontally) to the center of the container*/
+    width: 100%;
+  }
+
+  /*FAQ header section*/
+  .header {
+    /*placement of FAQ header section*/
+    position: absolute; /*positions the element relative to the nearest static element*/
+    margin: 70px 340px 10px 370px;
+
+    /*styling the font for the FAQ header section*/
+    font-family: "ethnocentric", sans-serif;
+    color: #e85102;
+    font-size: 35px;
+    white-space: nowrap; /*prevents text from wrapping onto a new line, forcing it to stay on one line*/
+  }
+
+  /*margin for the faq accordion*/
+  .accordion-panel {
+    margin: 130px 180px;
+  }
+
+  /*question section (rectangular box)*/
+  .accordion {
+    /*styling the colour of the question section*/
+    background-color: #777;
+    color: #f9f9f9;
+    cursor: pointer; /*sets the cursor to a pointer, indicating the element is clickable*/
+    padding: 18px;
+    width: 70%;
+    border: none; /*removes any borders from the element for a clean appearance*/
+    text-align: center;
+    outline: none; /*removes the default outline that appears when the element is focused*/
+    /*placement of question section*/
+    margin-top: 10px;
+    margin-left: 188px;
+    margin-right: 188px;
+
+    /*styling the font of the question section*/
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.4s; /*applies a smooth transition effect to property changes over 0.4 seconds*/
+
+    /*setting the alignment of text for the question section*/
+    line-height: 30px;
+    white-space: nowrap; /*prevents text from wrapping onto a new line, forcing it to stay on one line*/
+  }
+  
+  /*hover state of the question section (rectangular box)*/
+  .active, .accordion:hover {
+    /*styling the colour of the question section in hover state*/
+    background-color: #ccc;
+    color: #000000;
+    content: '\002B'; /*adds a "+" symbol as content, commonly used for visual indicators like expanding sections*/
+    color: #000000;
+  }
+  
+  /*plus "+" symbol (on rectangular box)*/
+  .accordion:after {
+    content: '\002B'; /*adds a "+" symbol as content, commonly used for visual indicators like expanding sections*/
+    color: #f9f9f9;
+    font-weight: bold; /*make it bold for emphasis*/
+    float: right; /*positions the element to the right side of its container*/
+    margin-left: 5px;
+  }
+  
+  /*clicked state of the plus "+" symbol (which transit to the minus "-" symbol*/
+  .active:after {
+    content: "\2212"; /*adds a "−" (minus) symbol as content, often used to indicate a collapsing section in a toggle or accordion*/
+  }
+  
+  /*answer section (text below rectangular box)*/
+  .panel {
+    /*placement of answer section*/
+    padding: 24px 24px;
+    width: 70%;
+    margin-left: 188px;
+    margin-right: 188px;
+
+    /*styling the font of the answer section*/
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+    text-align: center; /*setting the alignment of text for the answer section*/
+    background-color: #000000;
+    color: #d9d9d9;
+    max-height: 0; /*hides the element by setting its maximum height to 0*/
+    overflow: hidden; /*ensures that any content exceeding the max-height is not visible*/
+    transition: max-height 0.2s ease-out; /*smoothly transitions the max-height property over 0.2 seconds with an ease-out timing function, creating a sliding effect*/
+
+    line-height: 10px;
+    white-space: nowrap; /*prevents text from wrapping onto a new line, forcing it to stay on one line*/
+
+    display : none;
+  }
+
+  /*styling of the ABOUT page*/
+  .header1 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #f9f9f9;
+    line-height: 8px;
+    text-decoration: underline;
+    text-decoration-color: #e85102;
+  }
+
+  .pabt {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #999796;
+  }
+
+  /*positioning of each content line on the product materials and details*/
+  .abt {
+    padding: 50px;
+    margin: 60px 0px 0px 65px;
+  }
+
+  .p1 {
+    margin: 10px 0px 0px 114px; 
+  }
+
+  .p2 {
+    margin: 20px 0px 0px 114px;
+  }
+
+  .p3 {
+    margin: 2px 0px 0px 114px;
+  }
+
+  .matinfo {
+    margin: 80px 0px 0px 114px;
+  }
+
+  .midsole {
+    margin: 65px 0px 0px 114px;
+  }
+
+  .sockliner {
+    margin: 20px 0px 0px 114px;
+  }
+
+  .outsole {
+    margin: 20px 0px 0px 114px;
+  }
+
+  .upper {
+    margin: 20px 0px 0px 114px;
+  }
+
+  .lining {
+    margin: 20px 0px 0px 114px;
+  }
+
+  .deets {
+    padding: 50px;
+    margin: -568px 300px 0px 700px;
+  }
+
+  .lightw {
+    margin: 10px 0px 0px 750px; 
+  }
+
+  .reflect {
+    margin: 20px 0px 0px 750px;
+  }
+
+  .tpu {
+    margin: 20px 0px 0px 750px;
+  }
+
+  .cushion {
+    margin: 20px 0px 0px 750px;
+  }
+
+  .heel {
+    margin: 20px 0px 0px 750px;
+  }
+
+  .best {
+    margin: 20px 0px 0px 750px;
+  }
+
+  .runner {
+    margin: 20px 0px 0px 750px;
+  }
+
+  body {
+    background-color: #000000;
+}
+
+.hero { /*hero section*/
+    justify-content: center;
+    width: 100%;
+}
+
+h1 { /*heading 1*/
+    margin-top: 200px;
+    text-shadow: 0px 4px 4px #00000040;
+    background: linear-gradient(to right, #2D2B2B, #610401, #F16001, #D9C3AB);  /*styling of the gradient to be linear with 4 different colour codes*/
+    background-clip: text !important;
+    font-family: "ethnocentric", sans-serif;
+    color: transparent;
+    font-size: 220px;
+    text-align: center;
+}
+
+h2 { /*heading 2*/
+    font-family: "ethnocentric", sans-serif;
+    font-size: 70px;
+}
+
+h3 { /*heading 3*/
+    font-family: "ethnocentric", sans-serif;
+    font-size: 50px;
+}
+
+h5 { /*heading 4*/
+    font-family: "futura-pt", sans-serif;
+    font-size: 30px;
+}
+
+.tagline { /*styling of brand tagline*/
+    margin-top: -10px;
+    font-style: italic;
+    text-align: center;
+    color: #999796;
+}
+
+p { /*body text size*/
+    font-family: "futura-pt", sans-serif;
+    font-size: 20px;
+    line-height: 125%;
+}
+
+.grey { /*body text in grey colour*/
+    color: #999796;
+    padding: 0px 20px;
+    margin: 150px 300px 0px 50px;
+    text-align: left;
+}
+
+.grey-2 { /*body text in grey colour*/
+    color: #999796;
+    padding: 0px 20px;
+    margin: 220px 50px 0px 350px;
+    text-align: right;
+}
+.not-grey { /*body text in orange colour*/
+    color: #e85102;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.grey, .grey-2, .not-grey { /*putting in 1 line*/
+    display: inline-block;
+}
+
+.border-line {
+    padding: 0px 50px;
+    margin-top: 50px;
+}
+
+h4 { /*heading 4*/
+    font-family: "ethnocentric", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.white { /*heading 4 in white colour*/
+    color: #f9f9f9;
+    padding: 0px 20px;
+    margin: 200px 0px 0px 50px;
+}
+
+.orange { /*heading 4 in orange colour*/
+    color: #e85102;
+    padding: 0px 20px;
+    margin: 5px 0px 0px 50px;
+}
+
+.description { /*shoe description on section 1*/
+    color: #999796;
+    padding: 0px 20px;
+    margin: 70px 0px 0px 50px;
+}
+
+.shoe-model-360 { /*360 shoe model image*/
+    padding: 100px 100px 0px 100px;
+    margin-top: -200px;
+    float: right;
+}
+
+.CTA { /*cta button*/
+    font-family: "futura-pt", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 30px;
+    background-color: #e85102;
+    border-radius: 50px;
+    border-style: none;
+}
+
+.button-1 { /*explore now button*/
+    margin: 70px 20px 0px 65px;
+}
+
+.signal {
+    color: #999796;
+    font-family: "futura-pt", sans-serif;
+    font-size: 15px;
+    padding: 10px 25px 10px 50px;
+    background-color: #36363d;
+    border-radius: 15px;
+    border-style: none;
+    float: right;
+    margin: 170px 10px 0px 10px;
+    margin-right: -600px;
+}
+
+.signal-icon {
+    padding: 7px 15px;
+    float: right;
+    margin: 170px 10px 0px 10px;
+    margin-right: -350px;
+}
+
+.circular-lines {
+    margin: 100px 10px 0px 10px;
+    margin-right: -500px;
+    margin-top: -10px;
+    float: right;
+}
+
+.rotation {
+    color: #999796;
+    padding: 10px 25px 10px 50px;
+    background-color: #36363d;
+    border-radius: 15px;
+    border-style: none;
+    float: right;
+    margin: 170px 10px 0px 10px;
+    margin-right: -600px;
+}
+
+.header-1 {
+    text-align: center;
+    color: #f9f9f9;
+    padding: 0px 20px;
+    margin: 250px 0px 0px 50px;
+}
+
+.underline-1 {
+    padding: 0px 20px;
+    margin-left: 880px;
+}
+
+.description-2 {
+    color: #999796;
+    text-align: center;
+    padding: 0px 200px;
+    margin: 50px 0px 0px 50px;
+}
+
+.parent { /*base image*/
+    position: relative;
+}
+
+.exploded-shoe { /*explosion of shoe*/
+    position: relative;
+    padding: 100px;
+    margin: 100px 100px 100px 150px;
+}
+
+.arrow-1 { /* arrow pointing to feature 1*/
+    position: absolute;
+    margin-left: -1150px;
+    margin-top: 320px;
+}
+
+.feature-1-description { /*description of feature 1*/
+    color: #999796;
+    position: absolute;
+    padding: 0px 1100px 0px 150px;
+    margin-top: -1130px;
+}
+
+.feature-1-header { /*header of feature 1*/
+    color: #e85102;
+    font-weight: 700;
+    position: absolute;
+    padding: 0px 1020px 0px 150px;
+    margin-top: -1180px;
+}
+
+.arrow-2 { /* arrow pointing to feature 2*/
+    position: absolute;
+    margin-left: -1300px;
+    margin-top: 570px;
+}
+
+.feature-2-description { /*description of feature 2*/
+    color: #999796;
+    position: absolute;
+    padding: 0px 1250px 0px 50px;
+    margin-top: -920px;
+}
+
+.feature-2-header { /*header of feature 2*/
+    color: #e85102;
+    font-weight: 700;
+    position: absolute;
+    padding: 0px 1020px 0px 50px;
+    margin-top: -970px;
+}
+
+.arrow-3 { /* arrow pointing to feature 3*/
+    position: absolute;
+    margin-left: -1300px;
+    margin-top: 820px;
+}
+
+.feature-3-description { /*description of feature 3*/
+    color: #999796;
+    position: absolute;
+    padding: 0px 1220px 0px 50px;
+    margin-top: -330px;
+}
+
+.feature-3-header { /*header of feature 3*/
+    color: #e85102;
+    font-weight: 700;
+    position: absolute;
+    padding: 0px 1020px 0px 50px;
+    margin-top: -380px;
+}
+
+.arrow-4 { /* arrow pointing to feature 4*/
+    position: absolute;
+    margin-left: -330px;
+    margin-top: 330px;
+}
+
+.feature-4-description { /*description of feature 4*/
+    color: #999796;
+    position: absolute;
+    padding: 0px 50px 0px 1250px;
+    margin-top: -1030px;
+}
+
+.feature-4-header { /*header of feature 4*/
+    color: #e85102;
+    font-weight: 700;
+    position: absolute;
+    padding: 0px 50px 0px 1250px;
+    margin-top: -1100px;
+}
+
+.arrow-5 { /* arrow pointing to feature 5*/
+    position: absolute;
+    margin-left: -450px;
+    margin-top: 900px;
+}
+
+.feature-5-description { /*description of feature 5*/
+    color: #999796;
+    position: absolute;
+    padding: 0px 50px 0px 1200px;
+    margin-top: -550px;
+}
+
+.feature-5-header { /*header of feature 5*/
+    color: #e85102;
+    font-weight: 700;
+    position: absolute;
+    padding: 0px 150px 0px 1200px;
+    margin-top: -625px;
+}
+
+.arrow-6 { /* arrow pointing to feature 6*/
+    position: absolute;
+    margin-left: -450px;
+    margin-top: 1020px;
+}
+
+.feature-6-description { /*description of feature 6*/
+    color: #999796;
+    position: absolute;
+    padding: 0px 50px 0px 1200px;
+    margin-top: -270px;
+}
+
+.feature-6-header { /*header of feature 6*/
+    color: #e85102;
+    font-weight: 700;
+    position: absolute;
+    padding: 0px 50px 0px 1200px;
+    margin-top: -320px;
+}
+
+.border-line-2 {
+    padding: 0px 50px;
+}
+
+.usp-wrapper {  /*glowy circle image on usp 1*/
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url(./images/glowy\ circle\ 1.png); /*linked image as background image*/
+}
+
+.circle-1 {
+    margin-top: 100px;
+    margin-left: 100px; 
+}
+  
+.icon-1 {   /*icon image for usp 1*/
+    margin-top: 115px;
+    margin-left: 115px;
+}
+
+.circle-2 {  /*glowy circle image on usp 2*/
+    margin-top: 100px;
+    margin-left: 550px;
+}
+  
+.icon-2 {   /*icon image for usp 2*/
+    margin-top: 115px;
+    margin-left: 115px;
+}
+
+.circle-3 {  /*glowy circle image on usp 3*/
+    margin-top: 100px;
+    margin-left: 1000px;
+}
+  
+.icon-3 {   /*icon image for usp 3*/
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.usp-1-header { /*header of usp1*/
+    color: #e85102;
+    position: absolute;
+    text-align: center;
+    padding: 0px 1000px 0px 25px;
+    margin-top: 550px;
+    margin-left: 100px;
+}
+
+.usp-1-description { /*description of usp1*/
+    color: #999796;
+    position: absolute;
+    text-align: center;
+    padding: 25px 25px 0px 25px;
+    margin: 25px 1000px 0px 25px;
+    margin-top: 650px;
+    margin-left: 100px;
+}
+
+.usp-2-header { /*header of usp2*/
+    color: #e85102;
+    position: absolute;
+    text-align: center;
+    padding: 0px 500px 0px 500px;
+    margin: 550px 100px 0px 100px;
+}
+
+.usp-2-description { /*description of usp2*/
+    color: #999796;
+    position: absolute;
+    text-align: center;
+    padding: 25px 25px 0px 25px;
+    margin: 25px 550px 0px 25px;
+    margin-top: 650px;
+    margin-left: 550px;
+}
+
+.usp-3-header { /*header of usp3*/
+    color: #e85102;
+    position: absolute;
+    text-align: center;
+    padding: 0px 150px 0px 1100px;
+    margin-top: 550px;
+}
+
+.usp-3-description { /*description of usp3*/
+    color: #999796;
+    position: absolute;
+    text-align: center;
+    padding: 25px 25px 0px 25px;
+    margin: 25px 100px 0px 25px;
+    margin-top: 650px;
+    margin-left: 1020px;
+}
+
+.closeup-1-header-part-1 {
+    color: #f9f9f9;
+    position: absolute;
+    text-align: left;
+    padding: 25px 25px 0px 25px;
+    margin: 25px 100px 0px 100px;
+    margin-top: 950px;
+    margin-right: 1000px;
+}
+
+.closeup-1-header-part-2 {
+    color: #e85102;
+    position: absolute;
+    text-align: left;
+    padding: 25px 25px 0px 25px;
+    margin: 25px 100px 0px 100px;
+    margin-top: 1070px;
+    margin-right: 1000px;
+}
+
+.underline-2 {
+    position: absolute;
+    padding: 25px;
+    margin-top: 1200px;
+    margin-left: 100px;
+}
+
+.image-1 {
+    position: absolute;
+    padding: 50px;
+    margin-top: 1050px;
+    margin-left: 350px;
+}
+
+.closeup-1-description {
+    color: #999796;
+    position: absolute;
+    padding: 0px 200px 0px 50px;
+    margin-top: 1550px;
+    margin-left: 1000px;
+}
+
+.closeup-2-header-part-1 {
+    color: #e85102;
+    padding: 25px 25px 100px 25px;
+    margin-top: 2000px;
+    margin-left: 850px;
+}
+
+.closeup-2-header-part-2 {
+    color: #f9f9f9;
+    position: absolute;
+    padding: 25px 25px 0px 25px;
+    margin: 25px 100px 0px 100px;
+    margin-top: -120px;
+    margin-left: 850px;
+}
+
+.underline-3 {
+    padding: 25px;
+    margin: 10px 0px 0px 850px;
+}
+
+.image-2 {
+    padding: 70px;
+    margin-top: -450px;
+}
+
+.closeup-2-description {
+    color: #999796;
+    padding: 0px 350px 0px 25px;
+    margin-top: -200px;
+    margin-left: 850px;
+}
+
+.closeup-3-header-part-1 {
+    color: #f9f9f9;
+    padding: 25px;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.closeup-3-header-part-2 {
+    color: #e85102;
+    text-align: right;
+    padding: 25px;
+    margin-right: 260px;
+    margin-top: -130px;
+}
+
+.button-2 {
+    margin-left: 650px;
+    margin-top: -500px;
+    margin-bottom: 100px;
+}
+
+body {
+    font-family: "futura-pt", sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer { /*footer section*/
+    background-color: #d9d9d9;
+    padding: 70px 0px;
+    margin-top: 200px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.footer-col h6 { /*information text on the footer*/
+    font-family: "futura-pt", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    opacity: 0.7;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footer-col h6::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:#e85102;
+    height: 3px;
+    border-radius: 20%;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000000;
+    opacity: 0.5;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover { /*hover state*/
+    color: #000000;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{ /*default state of the social links*/
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #e85102;
+    margin: 0px 10px 10px 0px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #f9f9f9;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{ /*hover state of the social links*/
+    color:#e85102;
+    background-color: #f9f9f9;;
+}
