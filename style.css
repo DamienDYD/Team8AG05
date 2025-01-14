@@ -98,13 +98,15 @@ body {
 }
 
 .h5 { /*styling for 'IGNEZ FIREVALE V5.0' text on pre-order page*/
-    display: flex;
-    justify-content: right;
+    /*display: flex; */
+    justify-content: right; 
     font-family: "ethnocentric", sans-serif;
     font-weight: 400;
+    padding: 0px 20px;   /* ag trying to fix */
     font-size: 35px;
     color: #e85102;
-    margin: 12px 351px 0px 0px;
+    /* margin: 12px 351px 0px 0px; */
+    margin: 12px 351px 0px 732px;  /* ag trying to fix */
     text-align: left;
 }
 
@@ -196,34 +198,46 @@ input[type=submit]:hover {
 
 /* Positioning of the shoe model images */
 .shoe-model-1 {
-  width: 431px;
-  height: 307px;
-  margin: -595px 0px 0px 150px;
+  /* width: 431px;
+  height: 307px; */
+  width: 600px;
+  height: 500px;
+  /* margin: -595px 0px 0px 150px; */
+  margin: -700px 0px 0px 80px;
   position: absolute;
   object-fit: cover;
 }
 
 /*positioning of shoe model images for user viewing*/
 .shoe-model-2 {
-  width: 112px;
+  /* width: 112px;
   height: 81px;
-  margin: -258px 0px 0px 102px;
+  margin: -258px 0px 0px 102px;*/
+  width: 250px;
+  height: 200px;
+  margin: -325px 0px 0px 40px;
   position: absolute;
   object-fit: cover;
 }
 
 .shoe-model-3 {
-  width: 108px;
+  /* width: 108px;
   height: 77px;
-  margin: -258px 0px 0px 288px;
+  margin: -258px 0px 0px 288px; */
+  width: 250px;
+  height: 200px;
+  margin: -325px 0px 0px 245px;
   position: absolute;
   object-fit: cover;
 }
 
 .shoe-model-4 {
-  width: 108px;
+  /* width: 108px;
   height: 77px;
-  margin: -258px 0px 0px 472px;
+  margin: -258px 0px 0px 472px; */
+  width: 225px;
+  height: 175 px;
+  margin: -290px 0px 0px 472px;
   position: absolute;
   object-fit: cover;
 }
