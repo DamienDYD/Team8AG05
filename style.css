@@ -519,7 +519,6 @@ h4 { /*heading 4*/
     font-family: "ethnocentric", sans-serif;
     font-style: normal;
     font-size: 35px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .white { /*heading 4 in white colour*/
