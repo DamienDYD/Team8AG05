@@ -478,7 +478,7 @@ h5 { /*heading 4*/
     margin-top: -10px;
     font-style: italic;
     text-align: center;
-    color: #181616; /* original colour: #999796 */
+    color: #222120; /* original colour: #999796 */
 }
 
 p { /*body text size*/
@@ -569,14 +569,14 @@ h4 { /*heading 4*/
     border-style: none;
     float: right;
     margin: 170px 10px 0px 10px;
-    margin-right: -600px;
+    margin-right: 300px;
 }
 
 .signal-icon {
     padding: 7px 15px;
     float: right;
     margin: 170px 10px 0px 10px;
-    margin-right: -350px;
+    margin-right: -62px;
 }
 
 .circular-lines {
@@ -606,7 +606,7 @@ h4 { /*heading 4*/
 
 .underline-1 {
     padding: 0px 20px;
-    margin-left: 880px;
+    margin-left: 725px; /* original margin-left: 880px */
 }
 
 .description-2 {
