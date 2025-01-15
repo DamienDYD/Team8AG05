@@ -457,19 +457,6 @@ h1 { /*heading 1*/
     color: transparent;
     font-size: 220px;
     text-align: center;
-    position: relative;
-    animation: slideText 10s linear infinite; /* Animation applied */
-
-    @keyframes slideText {
-      0% {
-          transform: translateX(-100%); /* Start off-screen to the left */
-      }
-      50% {
-          transform: translateX(100%); /* Move to the right side */
-      }
-      100% {
-          transform: translateX(-100%); /* Move back to the left side */
-      }
 }
 
 h2 { /*heading 2*/
