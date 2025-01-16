@@ -51,7 +51,7 @@ async function setupViewer() {
   
   // disable user interaction, auto rotate model
   var controls = viewer.scene.activeCamera.controls; 
-  controls.autoRotate = false; // 
+  controls.autoRotate = true;
   controls.enabled = false; 
   controls.enableZoom = false; 
   controls.enablePan = false; 
@@ -141,6 +141,104 @@ async function setupViewer() {
         unexplodeShoe();  // put the shoe back when leaving
     }, 
   });
+
+  
+ 
+ // "bubble" animations
+  function animateUSP() { 
+    var duration = 1; 
+    gsap.fromTo( 
+      "#usp-container-ag-1",  
+      { 
+        opacity: 0,           // Start with opacity 0 (hidden) 
+        x: "50vw",              // Start off-screen to the left 
+      }, 
+      { 
+        opacity: 1,           // Fade in 
+        x: "0",              // Move to the left 
+        duration: duration,          // Duration of 1 second 
+      } 
+    ); 
+ 
+    gsap.fromTo( 
+      "#usp-container-ag-2",  
+      { 
+        opacity: 1,           // Start fully visible 
+        x: 0,                 // It stays in the center 
+      }, 
+      { 
+        opacity: 1,           // Keep it visible 
+        x: 0,                 // Keep it in the same place 
+        duration: duration,          // Instant, no movement 
+      } 
+    ); 
+ 
+    gsap.fromTo( 
+      "#usp-container-ag-3",  
+      { 
+        opacity: 0,           // Start with opacity 0 (hidden) 
+        x: "-50vw",              // Start off-screen to the right 
+      }, 
+      { 
+        opacity: 1,           // Fade in 
+        x: "0",              // Move to the right 
+        duration: duration,          // Duration of 1 second 
+      } 
+    ); 
+} 
+
+function animateUSPBack() { 
+  var duration = 1; 
+  gsap.fromTo( 
+    "#usp-container-ag-1",  
+    { 
+      opacity: 1,           // Start with opacity 0 (hidden) 
+      x: "0",              // Start off-screen to the left 
+    }, 
+    { 
+      opacity: 0,           // Fade in 
+      x: "50vw", 
+      duration: duration,          // Duration of 1 second 
+    } 
+  ); 
+
+  gsap.fromTo( 
+    "#usp-container-ag-2",  
+    { 
+      opacity: 1,           // Start fully visible 
+      x: 0,                 // It stays in the center 
+    }, 
+    { 
+      opacity: 1,           // Keep it visible 
+      x: 0,                 // Keep it in the same place 
+      duration: duration,          // Instant, no movement 
+    } 
+  ); 
+
+  gsap.fromTo( 
+    "#usp-container-ag-3",  
+    { 
+      opacity: 1,           // Start with opacity 0 (hidden) 
+      x: "0", 
+    }, 
+    { 
+      opacity: 0,           // Fade in 
+      x: "-50vw",          // Move to the right 
+      duration: duration,          // Duration of 1 second 
+    } 
+  ); 
+} 
+
+ScrollTrigger.create({ 
+  trigger: "#USP", 
+  start: "top center", 
+  onEnter: () => { 
+      animateUSP(); 
+  }, 
+  onLeaveBack: () => { 
+      animateUSPBack(); 
+  } 
+});
 }
 
 setupViewer();

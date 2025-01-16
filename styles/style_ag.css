@@ -65,3 +65,56 @@
   .descriptionAG{
     width: 55%;
   }
+
+  .usp-section-ag { 
+    display: flex; 
+  } 
+ 
+  .usp-icon-container-ag { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;  /* Center items horizontally */ 
+    align-items: center;  
+    width: 400px; 
+    height: 400px; 
+    background-image: url(../images/glowy\ circle\ 1.png); /*linked image as background image*/ 
+  } 
+ 
+  .usp-icon-ag { 
+    width: 200; 
+    height: 200px; 
+  } 
+ 
+  .usp-container-ag { 
+    display: flex;            /* Use Flexbox to align children */ 
+    flex-direction: column; 
+    justify-content: center;  /* Center items horizontally */ 
+    align-items: center;  
+  } 
+ 
+  #usp-container-ag-1 { 
+    z-index: 5; 
+    opacity: 0;  /* Initially hidden */ 
+    transform: translateX(100%); 
+  } 
+ 
+  #usp-container-ag-2 { 
+    z-index: 10; 
+  } 
+ 
+  #usp-container-ag-3 { 
+    z-index: 5; 
+    opacity: 0;  /* Initially hidden */ 
+    transform: translateX(-100%); 
+  } 
+ 
+  .usp-header-ag { /*header of usp1*/ 
+    color: #e85102; 
+    text-align: center; 
+} 
+ 
+.usp-description-ag { /*description of usp1*/ 
+  color: #999796; 
+  text-align: center; 
+  padding: 25px 25px 0px 25px; 
+}
